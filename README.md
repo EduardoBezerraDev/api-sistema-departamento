@@ -7,7 +7,7 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos através do 
   https://www.mediafire.com/file/3x6ll304wn2yrce/IPDV_1_1.0.apk/file/
 
 ### Observações
-O sistema foi pensado para ser utilizado como aplicativo, sendo assim, arquitetado para smartphones.
+O sistema foi pensado para ser utilizado como aplicativo web, sendo assim, arquitetado para smartphones.
 
 ## 🔧 Funçoes
 
