@@ -1,7 +1,7 @@
 
 # Sistema de  gerenciamento de departamento
 
-Sistema cujo objetivo é gerenciar pequenos e médios departamentos
+Sistema cujo objetivo é gerenciar pequenos e médios departamentos através do seu celular
 
 ## 🔧 Funçoes
 
@@ -44,7 +44,11 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos
   - jsonwebtoken (Para token de sessão)
   ## Gerenciamento de pacotes:
   - NPM V6.14.15
-  
+  - 
+ ### Como utilizar:
+ - Faça um clone do projeto
+ - 
+ 
 ### Contato
 
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eduardo-bezerra-78957216b/)
