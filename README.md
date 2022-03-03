@@ -47,7 +47,12 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos através do 
   - 
  ### Como utilizar:
  - Faça um clone do projeto
- - 
+ - Navegue até a pasta api-sistema-departamento
+ - Digite npm install no terminal
+ - execute o projeto utilizando npm start no terminal
+ - Pronto. A api está em execução
+ - Para visualizar o front end, navegue até a pasta front-end-sistema-departamento
+ - abra o arquivo index.html com o navegador
  
 ### Contato
 
