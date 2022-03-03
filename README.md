@@ -23,8 +23,7 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos
 - Atualizar
 - Deletar
 - listar usuários
-- listar usuários por departamento
-- listar departamentos por centro de custo
+- listar por centro de custo
 
 ### Módulo de cargo:
 - Criar
