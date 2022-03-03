@@ -52,7 +52,8 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos através do 
  - execute o projeto utilizando npm start no terminal
  - Pronto. A api está em execução
  - Para visualizar o front end, navegue até a pasta front-end-sistema-departamento
- - abra o arquivo index.html com o navegador
+ - Abra o arquivo index.html com o navegador
+ - Utilize CTRL + I para ver a versão mobile, no qual o projeto foi pensado
  
 ### Contato
 
