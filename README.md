@@ -17,7 +17,6 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos
 - Atualizar
 - Deletar
 - listar
-- listar
 
 ### Módulo de departamento:
 - Criar
