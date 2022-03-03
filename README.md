@@ -44,12 +44,12 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos através do 
   - jsonwebtoken (Para token de sessão)
   ## Gerenciamento de pacotes:
   - NPM V6.14.15
-  - 
+ 
  ### Como utilizar:
  - Faça um clone do projeto
  - Navegue até a pasta api-sistema-departamento
  - Digite npm install no terminal
- - execute o projeto utilizando npm start no terminal
+ - Execute o projeto utilizando npm start no terminal
  - Pronto. A api está em execução
  - Para visualizar o front end, navegue até a pasta front-end-sistema-departamento
  - Abra o arquivo index.html com o navegador
