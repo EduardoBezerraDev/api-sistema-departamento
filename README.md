@@ -50,6 +50,7 @@ O sistema foi pensado para ser utilizado como aplicativo, sendo assim, arquiteta
  
  ### Como utilizar:
  - Faça um clone do projeto
+ - Através do Pgadmin restaure o banco de dados "banco.sql"
  - Navegue até a pasta api-sistema-departamento
  - Digite npm install no terminal
  - Execute o projeto utilizando npm start no terminal
