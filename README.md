@@ -5,21 +5,21 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos
 
 ## 🔧 Funçoes
 
-### módulo de usuários:
+### Módulo de usuários:
 - Criar
 - Atualizar
 - Deletar
 - listar
 - listar por departamento
 
-### módulo de centro de custo:
+### Módulo de centro de custo:
 - Criar
 - Atualizar
 - Deletar
 - listar
 - listar
 
-### módulo de departamento:
+### Módulo de departamento:
 - Criar
 - Atualizar
 - Deletar
