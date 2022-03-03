@@ -32,7 +32,7 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos
 
 ## Feito Com:
   ### Front-end:
-  - Javascript (VanillaJS)
+  - Javascript (VanillaJS, Jquery)
   - CSS (materialize, que se baseia no material design)
   - HTMl 5
   - Axios (para requisições a API)
