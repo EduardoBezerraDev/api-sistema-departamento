@@ -28,8 +28,9 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos
 - listar departamentos por centro de custo
 
 ### Módulo de cargo:
-- Criar cargo
-- listar cargos
+- Criar
+- listar
+- deletar
 
 ## Feito Com:
 [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/pt-br/windows/get-windows-10)
