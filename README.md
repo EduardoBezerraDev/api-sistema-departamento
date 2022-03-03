@@ -1,40 +1,35 @@
-<img src="exemplo-image.png" alt="exemplo imagem">
 
-# Nome Do Projeto
+# Sistema de  gerenciamento de departamento
 
-Descrição curta do projeto. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+Sistema cujo objetivo é gerenciar pequenos e médios departamentos
 
-## 🔧 Funçoes (opcional)
+## 🔧 Funçoes
 
-### Função 01:
-- Descrição Da Função
+### módulo de usuários:
+- Criar
+- Atualizar
+- Deletar
+- listar
+- listar por departamento
 
-### Função 02:
-- Descrição Da Função
+### módulo de centro de custo:
+- Criar
+- Atualizar
+- Deletar
+- listar
+- listar
 
-## Download
+### módulo de departamento:
+- Criar
+- Atualizar
+- Deletar
+- listar usuários
+- listar usuários por departamento
+- listar departamentos por centro de custo
 
-Computer Version:
-
-[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/seu-usuario/seu-repositorio/releases)
-[![Linux](https://img.shields.io/badge/Linux-FF6600?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/seu-usuario/seu-repositorio/releases)
-[![Mac OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)](https://github.com/seu-usuario/seu-repositorio/releases)
-
-Smartphone Version:
-
-[![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=Android&logoColor=white)](https://github.com/seu-usuario/seu-repositorio/releases)
-[![IOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)](https://github.com/seu-usuario/seu-repositorio/releases)
-
-## Veja o desenvolvimento do projeto:
-
-Para ver o desenvolvimento acesse o planejamento:
-
-[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seu-usuario/seu-repositorio/projects/1)
-[![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)](https://trello.com/link-do-trello-do-projeto)
-
-Para ver o desenvolvimento mais detalhado acesse o devlog:
-
-[![Devlog](https://img.shields.io/badge/Devlog-999999?style=for-the-badge&logo=Files&logoColor=white)](https://gist.github.com/seu-usuario/sua-gist-ou-readme)
+### Módulo de cargo:
+- Criar cargo
+- listar cargos
 
 ## Feito Com:
 [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/pt-br/windows/get-windows-10)
