@@ -39,12 +39,14 @@ Sistema cujo objetivo é gerenciar pequenos e médios departamentos
   - HTMl 5
   - Axios (para requisições a API)
   ### Back-end:
-  - NodeJs
+  - NodeJs v14.17.6
   - Express
   - knex (como queryBuilder)
   - Postgresql V14 (como banco de dados)
   - jsonwebtoken (Para token de sessão)
-  
+  ## Gerenciamento de pacotes:
+  - NPM V6.14.15
+  - 
 ### Contato
 
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eduardo-bezerra-78957216b/)
