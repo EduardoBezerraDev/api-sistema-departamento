@@ -3,6 +3,9 @@
 
 Sistema cujo objetivo é gerenciar pequenos e médios departamentos através do seu celular
 
+###Observações
+O sistema foi pensado para ser utilizado como aplicativo, sendo assim, arquitetado para smartphones.
+
 ## 🔧 Funçoes
 
 ### Módulo de usuários:
