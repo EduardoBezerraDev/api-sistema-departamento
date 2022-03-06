@@ -16,10 +16,8 @@ main {
 }
 
 .toast {
-    margin-bottom: 2vh;
     width: 100vw;
     margin: auto auto;
-    margin-bottom: .1svh;
     text-align: center;
     justify-content: center;
 }
@@ -36,4 +34,25 @@ select {
     width: 100%!important;
 }
 
-@media (min-width: 600px) {}
+.modal-content,
+.modal {
+    padding: 0px!important;
+}
+
+@media (min-width: 600px) {
+    .modal {
+        max-width: 100vw;
+        min-height: 90vh;
+        top: 0px!important;
+    }
+    .modal-content {
+        overflow: hidden!important;
+    }
+    footer {
+        display: none;
+    }
+    .toast {
+        width: 30vw;
+        left: 30vw;
+    }
+}

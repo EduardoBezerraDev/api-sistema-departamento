@@ -1,0 +1,22 @@
+.container-login {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.actions>.btn {
+    width: 100%;
+}
+
+.title {
+    font-size: 20pt;
+}
+
+@media (min-width: 600px) {
+    .box {
+        max-width: 50vw;
+        margin: auto;
+    }
+}

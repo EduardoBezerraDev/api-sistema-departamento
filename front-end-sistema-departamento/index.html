@@ -12,19 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <!-- Your custom styles -->
     <link rel="stylesheet" href="./src/css/default.css">
+    <link rel="stylesheet" href="./src/css/login.css">
 
     <style>
-        .container-login {
-            min-height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 40px;
-        }
-        
-        .title {
-            font-size: 20pt;
-        }
+
     </style>
 </head>
 
@@ -44,9 +35,12 @@
                         <input type="password" id="password" class="validate" required minlength="3">
                         <label for="password">Senha</label>
                     </div>
-                    <button class="btn waves-effect waves-light green right" type="submit" name="action">Enviar
-                        <i class="bi bi-box-arrow-in-right right"></i>
-                  </button>
+                    <div class="actions col s12 l6 center">
+                        <button class="btn waves-effect waves-light green" type="submit" name="action">Enviar
+                            <i class="bi bi-box-arrow-in-right right"></i>
+                      </button>
+                    </div>
+
                 </form>
             </div>
         </div>

@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <a href="#modal_adicionar" class="btn-floating btn-large waves-effect waves-light red right modal-trigger">
+        <a href="#modal_add" class="btn-floating btn-large waves-effect waves-light red right modal-trigger">
             <i class="material-icons">add</i>
         </a>
     </main>
@@ -40,7 +40,7 @@
 
     <!--MODAIS-->
 
-    <div id="modal_adicionar" class="modal modal-fixed-footer">
+    <div id="modal_add" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h5 class="center">Novo centro de custo</h5>
             <div class="container">
@@ -51,43 +51,41 @@
                             <input type="text" name="cost_center" placeholder="ex: Tecnologia" required>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col s12 m4 l6 mt-3">
+                            <button type="submit" class="green waves-effect waves-light btn btn-full" required>
+                                <i class="material-icons right">save</i>Salvar
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="row">
-                <div class="col s12 m4 l6 mt-3">
-                    <button type="submit" class="green waves-effect waves-light btn btn-full" required>
-                                    <i class="material-icons right">save</i>Salvar
-                                </button>
-                </div>
-            </div>
-
-            </form>
         </div>
     </div>
 
     <div id="modal_update" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h5 class="center">Atualizar centro de custo</h5>
+            <h6 class="center">Atualizar centro de custo</h6>
             <div class="container">
                 <form action="post" onsubmit="costCenterUpdate(this)">
                     <div class="row">
-                        <div class="col s12 m4 l6">
-                            <input type="text" id="id" readonly required>
-                        </div>
+                        <input type="hidden" id="id" readonly required>
                         <div class="col s12 m4 l6">
                             <label for="">Nome do centro de custo</label>
                             <input type="text" name="cost_center" id="cost_center" placeholder="ex: Tecnologia" required>
                         </div>
                     </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m4 l6 mt-3">
-                    <button type="submit" class="green waves-effect waves-light btn btn-full" required>
-                                    <i class="material-icons right">save</i>Salvar
-                                </button>
-                </div>
+                    <div class="row">
+                        <div class="col s12 m4 l6 mt-3">
+                            <button type="submit" class="green waves-effect waves-light btn btn-full" required>
+                                <i class="material-icons right">save</i>Salvar
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
 
-            </form>
+
         </div>
     </div>
     <!-- jQuery CDN -->
