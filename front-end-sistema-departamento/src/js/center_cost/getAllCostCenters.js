@@ -23,7 +23,7 @@ const getAllCostCenters = () => {
         })
         .catch(function(error) {
             // handle error
-            alert(error)
+            console.log(error)
         })
 
 }

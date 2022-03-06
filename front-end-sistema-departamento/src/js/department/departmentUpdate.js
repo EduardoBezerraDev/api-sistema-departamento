@@ -1,5 +1,12 @@
 function departmentUpdate(form) {
     event.preventDefault()
+
+    if (!loginVerification()) {
+        alert("Você não está logado")
+        window.location.href = "../../index.html"
+        return false
+    }
+
     const id = document.querySelector("#id").value
     const json = formToJson(form)
     axios.put(`${domain}/departments/${id}`, json, header)
@@ -9,7 +16,7 @@ function departmentUpdate(form) {
         })
         .catch(function(error) {
             // handle error
-            alert(error)
+            console.log(error)
         })
 }
 
@@ -26,6 +33,6 @@ function departmentUpdateModal(id) {
             });
         })
         .catch(function(error) {
-            alert(error)
+            console.log(error)
         })
 }

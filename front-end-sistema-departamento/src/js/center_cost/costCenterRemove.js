@@ -1,4 +1,11 @@
 function costCenterRemove(id) {
+
+    if (!loginVerification()) {
+        alert("Você não está logado")
+        window.location.href = "../../index.html"
+        return false
+    }
+
     if (confirm("Deseja realmente deletar esse centro de custo?")) {
         axios.delete(`${domain}/cost-centers/${id}`, header)
             .then(function(response) {
@@ -8,7 +15,7 @@ function costCenterRemove(id) {
             })
             .catch(function(error) {
                 // handle error
-                alert(error)
+                console.log(error)
             })
     }
 }

@@ -1,5 +1,12 @@
 function departmentCreate(form) {
     event.preventDefault()
+
+    if (!loginVerification()) {
+        alert("Você não está logado")
+        window.location.href = "../../index.html"
+        return false
+    }
+
     const json = formToJson(form)
 
     axios.post(`${domain}/departments`, json, header)
@@ -8,7 +15,7 @@ function departmentCreate(form) {
             getAllDepartments()
         })
         .catch(function(error) {
-            alert(error)
+            console.log(error)
         })
 
 }

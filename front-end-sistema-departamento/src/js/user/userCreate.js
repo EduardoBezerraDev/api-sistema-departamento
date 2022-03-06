@@ -1,5 +1,12 @@
 function userCreate(form) {
     event.preventDefault()
+
+    if (!loginVerification()) {
+        alert("Você não está logado")
+        window.location.href = "../../index.html"
+        return false
+    }
+
     const json = formToJson(form)
 
     axios.post(`${domain}/users`, json, header)
@@ -9,7 +16,7 @@ function userCreate(form) {
         })
         .catch(function(error) {
             // handle error
-            alert(error)
+            console.log(error)
         })
 
 }

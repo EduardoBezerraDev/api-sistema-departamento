@@ -14,6 +14,6 @@ function selectCostCenter(element) {
         })
         .catch(function(error) {
             console.log("erro selectCostCenters")
-            alert(error);
+            console.log(error);
         });
 }

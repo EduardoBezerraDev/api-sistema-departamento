@@ -1,5 +1,12 @@
 function costCenterCreate(form) {
     event.preventDefault()
+
+    if (!loginVerification()) {
+        alert("Você não está logado")
+        window.location.href = "../../index.html"
+        return false
+    }
+
     const json = formToJson(form)
 
     axios.post(`${domain}/cost-centers`, json, header)
@@ -8,7 +15,7 @@ function costCenterCreate(form) {
             getAllCostCenters()
         })
         .catch(function(error) {
-            alert(error)
+            console.log(error)
         })
 
 }

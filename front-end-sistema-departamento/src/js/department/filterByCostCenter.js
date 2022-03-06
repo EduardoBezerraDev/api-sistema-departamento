@@ -1,4 +1,11 @@
 function filterByCostCenter(department) {
+
+    if (!loginVerification()) {
+        alert("Você não está logado")
+        window.location.href = "../../index.html"
+        return false
+    }
+
     const div = document.querySelector("#department_list");
 
     axios.get(`${domain}/departments/cost-centers/${department}`, header)
@@ -24,7 +31,7 @@ function filterByCostCenter(department) {
         })
         .catch(function(error) {
             // handle error
-            alert(error);
+            console.log(error);
         });
 
 }

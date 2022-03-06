@@ -14,6 +14,6 @@ function selectRole(element) {
         })
         .catch(function(error) {
             // handle error
-            alert(error);
+            console.log(error);
         });
 }

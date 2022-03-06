@@ -1,4 +1,5 @@
 function filterByDepartment(department) {
+    loginVerification()
     const div = document.querySelector("#user_list");
 
     axios.get(`${domain}/users/departments/${department}`, header)
@@ -25,7 +26,7 @@ function filterByDepartment(department) {
         })
         .catch(function(error) {
             // handle error
-            alert(error);
+            console.log(error);
         });
 
 }

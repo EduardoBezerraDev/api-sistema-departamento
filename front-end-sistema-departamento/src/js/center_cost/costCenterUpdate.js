@@ -1,5 +1,12 @@
 function costCenterUpdate(form) {
     event.preventDefault()
+
+    if (!loginVerification()) {
+        alert("Você não está logado")
+        window.location.href = "../../index.html"
+        return false
+    }
+
     const id = document.querySelector("#id").value
     const json = formToJson(form)
     axios.put(`${domain}/cost-centers/${id}`, json, header)
@@ -9,7 +16,7 @@ function costCenterUpdate(form) {
         })
         .catch(function(error) {
             // handle error
-            alert(error)
+            console.log(error)
         })
 }
 
@@ -23,6 +30,6 @@ function costCenterUpdateModal(id) {
             });
         })
         .catch(function(error) {
-            alert(error)
+            console.log(error)
         })
 }

@@ -1,5 +1,12 @@
 function userUpdate(form) {
     event.preventDefault()
+
+    if (!loginVerification()) {
+        alert("Você não está logado")
+        window.location.href = "../../index.html"
+        return false
+    }
+
     const id = document.querySelector("#id").value
     const json = formToJson(form)
     axios.put(`${domain}/users/${id}`, json, header)
@@ -9,7 +16,7 @@ function userUpdate(form) {
         })
         .catch(function(error) {
             // handle error
-            alert(error)
+            console.log(error)
         })
 
 }
@@ -30,6 +37,6 @@ function userUpdateModal(id) {
             });
         })
         .catch(function(error) {
-            alert(error)
+            console.log(error)
         })
 }

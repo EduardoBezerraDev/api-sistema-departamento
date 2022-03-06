@@ -13,6 +13,6 @@ const selectDepartment = (element) => {
         })
         .catch(function(error) {
 
-            alert(error)
+            console.log(error)
         })
 }

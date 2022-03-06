@@ -1,4 +1,11 @@
 function departmentRemove(id) {
+
+    if (!loginVerification()) {
+        alert("Você não está logado")
+        window.location.href = "../../index.html"
+        return false
+    }
+
     if (confirm("Deseja realmente deletar esse departamento?")) {
         axios.delete(`${domain}/departments/${id}`, header)
             .then(function(response) {
@@ -8,7 +15,7 @@ function departmentRemove(id) {
             })
             .catch(function(error) {
                 // handle error
-                alert(error)
+                console.log(error)
             })
     }
 }

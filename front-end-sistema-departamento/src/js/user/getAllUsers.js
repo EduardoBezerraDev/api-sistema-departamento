@@ -3,7 +3,7 @@ const getAllUsers = () => {
     axios.get(`${domain}/users`, header)
         .then(function(response) {
             if (response.data.length < 1) {
-                alert("Nenhum usuário encontrado")
+                alert("Não há usuários cadastrados")
             }
             let users = ""
             response.data.forEach(info => {
@@ -23,7 +23,7 @@ const getAllUsers = () => {
         })
         .catch(function(error) {
             // handle error
-            alert(error)
+            console.log(error)
         })
 
 }
