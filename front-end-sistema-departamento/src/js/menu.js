@@ -8,10 +8,17 @@ const menu = () => {
                 <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
+<<<<<<< HEAD
                     <li><a href="../page/users.html">Usuários</a></li>
                     <li><a href="../page/roles.html">Cargos</a></li>
                     <li><a href="../page/departments.html">Departamentos</a></li>
                     <li><a href="../page/costCenter.html">Centros de custos</a></li>
+=======
+                    <li><a href="src/page/users.html">Usuários</a></li>
+                    <li><a href="src/page/roles.html">Cargos</a></li>
+                    <li><a href="src/page/departments.html">Departamentos</a></li>
+                    <li><a href="src/page/costCenter.html">Centros de custos</a></li>
+>>>>>>> 27c592cc959363f549832ca43e08fee1c1fc1c5f
             </ul>
             <ul class="side-nav" id="mobile-menu">
                 <li>
@@ -23,10 +30,17 @@ const menu = () => {
                         <a href="#!email"><span class="white-text email">profissional.edu.teixeira@gmail.com</span></a>
                     </div>
                 </li>
+<<<<<<< HEAD
                 <li><a href="../page/users.html">Usuários</a></li>
                 <li><a href="../page/roles.html">Cargos</a></li>
                 <li><a href="../page/departments.html">Departamentos</a></li>
                 <li><a href="../page/costCenter.html">Centros de custos</a></li>
+=======
+                <li><a href="src/page/users.html">Usuários</a></li>
+                <li><a href="src/page/roles.html">Cargos</a></li>
+                <li><a href="src/page/departments.html">Departamentos</a></li>
+                <li><a href="src/page/costCenter.html">Centros de custos</a></li>
+>>>>>>> 27c592cc959363f549832ca43e08fee1c1fc1c5f
             </ul>
         </div>
     </div>
