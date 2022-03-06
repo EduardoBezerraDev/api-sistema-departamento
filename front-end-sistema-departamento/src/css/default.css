@@ -35,9 +35,7 @@ select {
 }
 
 .modal-content,
-.modal {
-    padding: 0px!important;
-}
+.modal {}
 
 @media (min-width: 600px) {
     .modal {
