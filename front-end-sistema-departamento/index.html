@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ipdv online</title>
+    <!-- bootstrap   Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Materialize CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="./src/css/default.css">
+
+    <style>
+        .container-login {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+        }
+        
+        .title {
+            font-size: 20pt;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container-login">
+            <div class="box">
+                <div class="title center">
+                    <h3 class="grey-text">IPDV Online</h3>
+                </div>
+                <form onsubmit="login()">
+                    <div class="input-field col s12 l6">
+                        <input type="text" id="user" class="validate" required minlength="3">
+                        <label for="user">Usuário</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <input type="password" id="password" class="validate" required minlength="3">
+                        <label for="password">Senha</label>
+                    </div>
+                    <button class="btn waves-effect waves-light green right" type="submit" name="action">Enviar
+                        <i class="bi bi-box-arrow-in-right right"></i>
+                  </button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer class="page-footer blue">
+
+    </footer>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/footer.js"></script>
+    <script src="./src/js/const/domain.js"></script>
+    <script src="./src/js/const/login.js"></script>
+
+    <script>
+        $("document").ready(function() {
+            //headers()
+            footer()
+            $(".button-collapse").sideNav();
+        });
+    </script>
+</body>
+
+</html>

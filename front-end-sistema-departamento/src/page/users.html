@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ipdv online</title>
+    <!-- Material Icon CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="../css/default.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="row p-3">
+                <div class="col s12 l6">
+                    <label>Selecione um departamento</label>
+                    <select class="browser-default select_department" onchange="filterByDepartment(this.value)"></select>
+                </div>
+            </div>
+            <div class="row">
+                <table class="centered">
+                    <thead>
+                        <tr>
+                            <th>Usuário</th>
+                            <th>Cargo</th>
+                            <th>Departamento</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user_list"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <a href="#modal_adicionar" class="btn-floating btn-large waves-effect waves-light red right modal-trigger">
+            <i class="material-icons">add</i>
+        </a>
+
+    </main>
+    <footer class="page-footer blue">
+
+    </footer>
+
+    <!--MODAIS-->
+
+    <div id="modal_adicionar" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h5 class="center">Novo usuário</h5>
+            <div class="container">
+                <form action="post" onsubmit="userCreate(this)">
+                    <div class="row">
+                        <div class="col s12 m4 l6">
+                            <label for="">Nome do usuário</label>
+                            <input type="text" name="name" placeholder="ex: Pedro Rodrigues" required>
+                        </div>
+                        <div class="col s12 m4 l6">
+                            <label>Selecione um cargo</label>
+                            <select class="browser-default select_role" name="role" required>
+
+                            </select>
+                        </div>
+                        <div class="col s12 m4 l6">
+                            <label>Selecione um departamento</label>
+                            <select class="browser-default select_department" name="department" required>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m4 l6 mt-3">
+                            <button type="submit" class="green waves-effect waves-light btn btn-full" required>
+                                    <i class="material-icons right">save</i>Salvar
+                                </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
+        </div>
+    </div>
+
+
+
+    <div id="modal_update" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h5 class="center">Atualizar usuário</h5>
+            <div class="container">
+                <form action="post" onsubmit="userUpdate(this)">
+                    <div class="row">
+                        <div class="col s12 m4 l6">
+                            <input type="hidden" name="name" id="id" required readonly>
+                        </div>
+                        <div class="col s12 m4 l6">
+                            <label for="">Nome do usuário</label>
+                            <input type="text" name="name" id="name" placeholder="ex: Pedro Rodrigues" required>
+                        </div>
+                        <div class="col s12 m4 l6">
+                            <label>Selecione um cargo</label>
+                            <select class="browser-default" id="role" name="role" onmouseenter="selectRole('#'+this.id)" required>
+                            </select>
+                        </div>
+                        <div class="col s12 m4 l6">
+                            <label>Selecione um departamento</label>
+                            <select class="browser-default" id="department" name="department" onmouseenter="selectDepartment('#'+this.id)" required>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m4 l6 mt-3">
+                            <button type="submit" class="green waves-effect waves-light btn btn-full">
+                                    <i class="material-icons right">save</i>Salvar
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
+        </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/const/domain.js"></script>
+    <script src="../js/const/login.js"></script>
+
+    <script src="../js/util/formToJson.js"></script>
+
+    <script src="../js/user/getAllUsers.js"></script>
+    <script src="../js/user/userRemove.js"></script>
+    <script src="../js/department/selectDepartment.js"></script>
+    <script src="../js//role/selectRole.js"></script>
+
+    <script src="../js/user/filterByDepartment.js"></script>
+    <script src="../js/user/userCreate.js"></script>
+    <script src="../js/user/userUpdate.js"></script>
+    <script src="../js/util/loginVerification.js"></script>
+
+
+    <script>
+        $("document").ready(function() {
+            if (!loginVerification()) {
+                alert("Você não está logado")
+                window.location.href = "../../index.html"
+                return false
+            }
+
+            menu()
+            footer()
+            getAllUsers()
+            selectDepartment(".select_department")
+            selectRole(".select_role")
+
+            $(".button-collapse").sideNav();
+            $('.modal').modal();
+        });
+    </script>
+</body>
+
+</html>

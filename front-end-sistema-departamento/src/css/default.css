@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    min-height: 75vh;
+}
+
+.btn-floating {
+    position: absolute;
+    bottom: 10vh;
+    right: 3vw;
+}
+
+.toast {
+    margin-bottom: 2vh;
+    width: 100vw;
+    margin: auto auto;
+    margin-bottom: .1svh;
+    text-align: center;
+    justify-content: center;
+}
+
+select {
+    border-color: grey;
+}
+
+.p-3 {
+    padding: 3px
+}
+
+.btn-full {
+    width: 100%!important;
+}
+
+@media (min-width: 600px) {}
