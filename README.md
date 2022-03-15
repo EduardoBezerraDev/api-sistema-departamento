@@ -3,9 +3,6 @@
 
 Sistema cujo objetivo é gerenciar pequenos e médios departamentos através do seu celular
 
-### Você pode está baixando o aplicativo (apk) para android aqui:
-  https://www.mediafire.com/file/3x6ll304wn2yrce/IPDV_1_1.0.apk/file/
-
 ### Observações
 O sistema foi pensado para ser utilizado como aplicativo web, sendo assim, arquitetado para smartphones.
 
